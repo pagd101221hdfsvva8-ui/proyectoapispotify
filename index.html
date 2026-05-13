@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Spotify Artist Search
+    </title>
+
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>
+            SPOTIFY SEARCH
+        </h1>
+
+        <p>
+            Busca tu artista favorito
+        </p>
+
+    </header>
+
+
+    <section class="buscador">
+
+        <input
+            type="text"
+            id="busqueda"
+            placeholder="Buscar artista..."
+        >
+
+        <button id="boton">
+
+            Buscar
+
+        </button>
+
+    </section>
+
+
+    <main id="contenedor">
+
+
+        <div class="card">
+
+
+            <div class="imagen-artista">
+
+                <img
+                    id="imagen-artista"
+                    src=""
+                >
+
+            </div>
+
+
+            <div class="info">
+
+
+                <h2 id="nombre-artista">
+
+                </h2>
+
+
+                <details>
+
+                    <summary>
+                        Oyentes Mensuales
+                    </summary>
+
+                    <p id="oyentes"></p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Seguidores
+                    </summary>
+
+                    <p id="seguidores"></p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Popularidad
+                    </summary>
+
+                    <p id="popularidad"></p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Biografía
+                    </summary>
+
+                    <p id="bio"></p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Historia Musical
+                    </summary>
+
+                    <p id="historia"></p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Top 5 Canciones
+                    </summary>
+
+                    <ul id="canciones"></ul>
+
+                </details>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

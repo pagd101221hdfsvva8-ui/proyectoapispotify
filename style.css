@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Montserrat', sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #0f0f0f,
+        #121212,
+        #000000
+    );
+
+    color: white;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+}
+
+body::before{
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(29,185,84,0.15),
+        transparent 40%
+    );
+
+    z-index: -1;
+
+}
+
+header{
+
+    width: 100%;
+
+    text-align: center;
+
+    padding-top: 30px;
+
+}
+
+
+header h1{
+
+    font-size: 70px;
+
+    font-weight: 900;
+
+    color: #1DB954;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+    0px 0px 25px rgba(29,185,84,0.6);
+
+}
+
+
+header p{
+
+    margin-top: 10px;
+
+    color: #cfcfcf;
+
+    font-size: 20px;
+
+}
+
+
+.buscador{
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+}
+
+
+input{
+
+    width: 420px;
+
+    padding: 18px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 18px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 16px;
+
+    backdrop-filter: blur(10px);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+}
+
+
+button{
+
+    padding: 18px 28px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #1DB954;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover{
+
+    transform: scale(1.05);
+
+    box-shadow:
+    0px 0px 25px rgba(29,185,84,0.5);
+
+}
+
+
+#contenedor{
+
+    width: 92%;
+
+    margin: 50px auto;
+
+}
+
+
+.card{
+
+    display: flex;
+
+    gap: 40px;
+
+    align-items: flex-start;
+
+}
+
+
+.imagen-artista{
+
+    width: 35%;
+
+    position: sticky;
+
+    top: 40px;
+
+}
+
+
+.imagen-artista img{
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    border:
+    6px solid #1DB954;
+
+    box-shadow:
+    0px 0px 40px rgba(29,185,84,0.4);
+
+}
+
+
+.info{
+
+    width: 65%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.info details{
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(14px);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+.info details:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0px 10px 30px rgba(0,0,0,0.4);
+
+}
+
+
+.info summary{
+
+    padding: 22px;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    list-style: none;
+
+    color: #1DB954;
+
+}
+
+
+.info p{
+
+    padding:
+    0px 22px 22px 22px;
+
+    line-height: 1.8;
+
+    color: #e4e4e4;
+
+    font-size: 16px;
+
+}
+
+
+.info ul{
+
+    padding:
+    0px 40px 25px 45px;
+
+}
+
+
+.info li{
+
+    margin-bottom: 12px;
+
+    color: white;
+
+    font-size: 16px;
+
+}
+
+
+#nombre-artista{
+
+    font-size: 65px;
+
+    font-weight: 900;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+    0px 0px 20px rgba(255,255,255,0.2);
+
+}
+
+
+@media(max-width:1100px){
+
+    .card{
+
+        flex-direction: column;
+
+    }
+
+    .imagen-artista{
+
+        width: 100%;
+
+        position: relative;
+
+    }
+
+    .info{
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    header h1{
+
+        font-size: 45px;
+
+    }
+
+    .buscador{
+
+        flex-direction: column;
+
+    }
+
+    input{
+
+        width: 90%;
+
+    }
+
+    #nombre-artista{
+
+        font-size: 45px;
+
+    }
+
+}
